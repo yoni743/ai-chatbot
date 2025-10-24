@@ -1,17 +1,80 @@
-# 🤖 AI Chatbot Prototype
+# 🤖 AI Chatbot Flask Web App
 
-A complete NLP Chatbot Prototype built with Python, TensorFlow, and NLTK for text classification and response generation. This project demonstrates how to build a modular, documented, and beginner-friendly AI chatbot that can be trained and used locally.
+A production-ready Flask web application that serves an AI chatbot with a modern web UI and REST API. Built with Python, Flask, TensorFlow/Keras, and NLTK. You can train your model locally and interact with it via a beautiful browser interface or programmatically through a JSON API.
 
 ## 🌟 Features
 
-- **Intent Classification**: Uses TensorFlow/Keras Sequential Neural Network for intent recognition
-- **Natural Language Processing**: NLTK for tokenization, stemming, and bag-of-words processing
-- **Confidence Threshold**: Implements fallback responses for low-confidence predictions
-- **🌐 Modern Web Interface**: Beautiful, responsive web application with real-time chat
-- **💻 Command Line Interface**: Terminal-based chat interface with colored output
-- **Training Visualization**: Jupyter notebook for model training analysis
-- **Sentiment Analysis**: Optional sentiment detection using TextBlob and VADER
-- **Modular Design**: Clean separation of concerns with reusable components
+- **Flask Web App**: Responsive, modern chat UI served by Flask
+- **REST API**: Simple `/api/chat` endpoint for programmatic access
+- **Intent Classification**: TensorFlow/Keras model for robust intent recognition
+- **NLTK Preprocessing**: Tokenization, stemming, and bag-of-words
+- **Configurable**: Confidence threshold and optional sentiment analysis
+- **Batteries Included**: Training scripts, CLI, and notebooks for model development
+
+## 🧩 Setup
+
+### Prerequisites
+
+- Python 3.8+
+- pip
+- Git (optional, for cloning)
+
+### Installation
+
+```bash
+# Clone and enter the project
+git clone https://github.com/yoni743/ai-chatbot.git
+cd chatbot
+
+# (Recommended) Create and activate a virtual environment
+python -m venv venv
+./venv/Scripts/Activate.ps1   # Windows PowerShell
+# source venv/bin/activate    # macOS/Linux
+
+# Install dependencies
+pip install -r requirements.txt
+```
+
+### Configuration (optional)
+
+Create a `.env` file in the project root if you need to override defaults:
+
+```env
+FLASK_ENV=development
+SECRET_KEY=your-secret-key
+MODEL_PATH=models/chatbot_model.h5
+```
+
+## ▶️ Usage
+
+### Run the Web App
+
+```bash
+python run_web.py
+```
+
+Then open http://localhost:5000 in your browser.
+
+### REST API
+
+- **Endpoint**: `POST /api/chat`
+- **Request**:
+
+```bash
+curl -X POST http://localhost:5000/api/chat \
+  -H "Content-Type: application/json" \
+  -d '{"message":"Hello there"}'
+```
+
+- **Response**:
+
+```json
+{
+  "reply": "Hello! How can I help you today?",
+  "intent": "greeting",
+  "confidence": 0.93
+}
+```
 
 ## 📁 Project Structure
 

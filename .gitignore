@@ -1,0 +1,10 @@
+﻿venv/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+models/
+*.h5
+*.log
+.env
+.ipynb_checkpoints/

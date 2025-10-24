@@ -1,0 +1,215 @@
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": [
+          "Hi",
+          "Hey",
+          "Hello",
+          "Good morning",
+          "Good afternoon",
+          "Good evening",
+          "Howdy",
+          "What's up",
+          "Hey there",
+          "Hi there",
+          "Hello there",
+          "Greetings",
+          "Nice to meet you",
+          "Yo",
+          "Hey bot",
+          "Hi bot",
+          "Hey chatbot",
+          "Hi, how are you",
+          "Good day",
+          "Good to see you",
+          "Morning",
+          "Evening",
+          "Sup",
+          "Yo there"
+        ],
+        "responses": [
+          "Hello! How can I help you today?",
+          "Hi there! What can I do for you?",
+          "Hey! Nice to meet you. How can I assist you?",
+          "Hello! I'm here to help. What do you need?",
+          "Hi! Great to see you. How can I be of service?"
+        ]
+      },
+      {
+        "tag": "goodbye",
+        "patterns": [
+          "Bye",
+          "Goodbye",
+          "See you later",
+          "See you soon",
+          "Take care",
+          "Farewell",
+          "Have a good day",
+          "Talk to you later",
+          "Catch you later",
+          "Bye bye",
+          "See ya",
+          "Later",
+          "Good night",
+          "Goodnight",
+          "See you next time",
+          "See you around"
+        ],
+        "responses": [
+          "Goodbye! Have a great day!",
+          "See you later! Take care!",
+          "Bye! It was nice chatting with you!",
+          "Farewell! Come back anytime!",
+          "Goodbye! Feel free to chat again soon!"
+        ]
+      },
+      {
+        "tag": "thanks",
+        "patterns": [
+          "Thank you",
+          "Thanks",
+          "Thank you very much",
+          "Thanks a lot",
+          "Much appreciated",
+          "I appreciate it",
+          "Thanks so much",
+          "Thank you so much",
+          "Grateful",
+          "Appreciate it",
+          "Thanks a bunch",
+          "Many thanks",
+          "Thanks buddy",
+          "Thanks friend",
+          "You're the best"
+        ],
+        "responses": [
+          "You're welcome!",
+          "Happy to help!",
+          "No problem at all!",
+          "My pleasure!",
+          "Glad I could assist you!",
+          "You're very welcome!"
+        ]
+      },
+      {
+        "tag": "help",
+        "patterns": [
+          "Help",
+          "Can you help me",
+          "I need help",
+          "What can you do",
+          "How can you help",
+          "What are your capabilities",
+          "What do you do",
+          "Assist me",
+          "Support",
+          "Guide me",
+          "Show me what you can do",
+          "Tell me about yourself",
+          "What is your function",
+          "What can you help with",
+          "Explain your abilities"
+        ],
+        "responses": [
+          "I'm here to help! I can chat with you, answer questions, and assist with various topics. What would you like to know?",
+          "I'm a helpful chatbot! I can have conversations, provide information, and assist you with different topics. How can I help you today?",
+          "I'm designed to help and chat with you! I can discuss various topics, answer questions, and provide assistance. What do you need help with?",
+          "I'm your friendly AI assistant! I can help with conversations, provide information, and assist with different subjects. What can I do for you?"
+        ]
+      },
+      {
+        "tag": "weather",
+        "patterns": [
+          "What's the weather like",
+          "How's the weather",
+          "Weather today",
+          "Is it sunny",
+          "Is it raining",
+          "Temperature",
+          "Weather forecast",
+          "Is it cold",
+          "Is it hot",
+          "Weather conditions",
+          "Climate",
+          "Weather report",
+          "Tell me today's weather",
+          "What’s the temperature outside"
+        ],
+        "responses": [
+          "I don't have access to real-time weather data, but I'd be happy to help you find weather information! You can check your local weather app or website for current conditions.",
+          "I can't check the weather directly, but I recommend checking a reliable weather service for the most up-to-date information in your area.",
+          "For current weather conditions, I'd suggest checking your local weather app or visiting a weather website. I'm here to chat about other topics though!"
+        ]
+      },
+      {
+        "tag": "name",
+        "patterns": [
+          "What's your name",
+          "Who are you",
+          "What should I call you",
+          "Tell me your name",
+          "Your name",
+          "Name",
+          "Who is this",
+          "What are you called",
+          "Introduce yourself",
+          "What do people call you",
+          "Do you have a name"
+        ],
+        "responses": [
+          "I'm an AI chatbot designed to help and chat with you! You can call me ChatBot or just Bot.",
+          "I'm a helpful AI assistant! I don't have a specific name, but you can call me ChatBot or whatever you prefer.",
+          "I'm an AI chatbot created to assist you! Feel free to call me ChatBot or give me any name you like.",
+          "I'm your friendly AI assistant! You can call me ChatBot or just refer to me as your AI helper."
+        ]
+      },
+      {
+        "tag": "mood",
+        "patterns": [
+          "How are you",
+          "How do you feel",
+          "Are you okay",
+          "How's it going",
+          "How are you doing",
+          "What's up with you",
+          "Are you feeling good",
+          "How's your day",
+          "Everything okay",
+          "You doing well",
+          "What's up",
+          "How's everything",
+          "How are things"
+        ],
+        "responses": [
+          "I'm doing great, thank you for asking! I'm here and ready to help you with whatever you need.",
+          "I'm doing well! I'm always ready to chat and assist you. How are you doing?",
+          "I'm excellent! I'm here and functioning perfectly to help you. How can I assist you today?",
+          "I'm doing fantastic! I'm always ready to help and chat. What can I do for you?"
+        ]
+      },
+      {
+        "tag": "fallback",
+        "patterns": [
+          "I don't understand",
+          "What do you mean",
+          "Can you explain",
+          "I'm confused",
+          "That doesn't make sense",
+          "I'm lost",
+          "Help me understand",
+          "What are you talking about",
+          "I'm not following",
+          "Can you clarify"
+        ],
+        "responses": [
+          "I'm not sure I understand. Could you rephrase that?",
+          "I'm having trouble understanding. Can you try asking in a different way?",
+          "I'm not sure what you mean. Could you clarify or ask something else?",
+          "I don't quite follow. Could you rephrase your question?",
+          "I'm not certain I understand. Can you try asking differently?"
+        ]
+      }
+    ]
+  }
+  
